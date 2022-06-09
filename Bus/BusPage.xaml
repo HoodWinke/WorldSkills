@@ -1,0 +1,22 @@
+﻿<Page x:Class="Bus.BusPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Bus"
+      mc:Ignorable="d" 
+      d:DesignHeight="337" d:DesignWidth="772"
+      Title="BusPage">
+
+    <Grid Background="AntiqueWhite">
+        <DatePicker Name="dateText" HorizontalAlignment="Left" Margin="59,118,0,0" VerticalAlignment="Top" Width="164"/>
+        <TextBox x:Name="modelText" HorizontalAlignment="Left" Height="23" Margin="59,70,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="164" RenderTransformOrigin="0.235,0.341"/>
+        <TextBlock HorizontalAlignment="Left" Margin="59,49,0,0" TextWrapping="Wrap" Text="Модель автобуса" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="59,98,0,0" TextWrapping="Wrap" Text="Дата производства" VerticalAlignment="Top"/>
+        <Button Content="Добавить" HorizontalAlignment="Left" Margin="59,161,0,0" VerticalAlignment="Top" Width="164" Click="Button_Click"/>
+        <Button Content="Удалить" HorizontalAlignment="Left" Margin="59,186,0,0" VerticalAlignment="Top" Width="164"/>
+        <Button Content="Изменить" HorizontalAlignment="Left" Margin="59,186,0,0" VerticalAlignment="Top" Width="164"/>
+        <DataGrid Name="BusGrid" HorizontalAlignment="Left" Height="292" Margin="278,30,0,0" VerticalAlignment="Top" Width="461" CanUserReorderColumns="False" SelectionChanged="BusGrid_SelectionChanged" SelectedCellsChanged="BusGrid_SelectedCellsChanged"/>
+        <TextBlock HorizontalAlignment="Left" Margin="278,14,0,0" TextWrapping="Wrap" Text="Список автобусов" VerticalAlignment="Top"/>
+    </Grid>
+</Page>
